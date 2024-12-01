@@ -16,7 +16,6 @@ class FormFillTests {
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
-//        Configuration.holdBrowserOpen = true;
     }
 
     @Test
@@ -53,8 +52,5 @@ class FormFillTests {
         $(".table").$(byText("Picture")).sibling(0).shouldHave(text("image.jpeg"));
         $(".table").$(byText("Address")).sibling(0).shouldHave(text("Some address"));
         $(".table").$(byText("State and City")).sibling(0).shouldHave(text("Uttar Pradesh Lucknow"));
-
-
-
     }
 }
