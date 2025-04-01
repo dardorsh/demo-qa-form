@@ -1,5 +1,5 @@
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Config;
+package tests;
+
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-class FormFillTests {
+class RegistrationTests {
 
     @BeforeAll
     static void setupConfig() {
@@ -23,6 +23,7 @@ class FormFillTests {
         open("/automation-practice-form");
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
+
         $("#firstName").setValue("Ivan");
         $("#lastName").setValue("Ivanov");
         $("#userEmail").setValue("ivanov@mail.com");

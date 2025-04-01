@@ -1,3 +1,5 @@
+package homeworks;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.DragAndDropOptions;
 import com.codeborne.selenide.SelenideElement;
