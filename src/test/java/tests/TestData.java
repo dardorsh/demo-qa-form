@@ -1,7 +1,6 @@
 package tests;
 
 import utils.RandomUtils;
-import utils.RandomUtils.*;
 
 public class TestData {
     private static final RandomUtils randomUtils = new RandomUtils();

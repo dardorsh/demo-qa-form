@@ -1,11 +1,7 @@
 package tests;
 
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
-
-import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationWithPageObjectTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
